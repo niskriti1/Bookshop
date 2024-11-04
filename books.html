@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/navstyle.css">
+</head>
+<body>
+    <div class="book-header">
+        <div class="book-header-left-section">
+          <a href="index.html" class="header-link">
+            <img class="book-logo"
+              src="images/book-logo.png">
+          </a>
+        </div>
+      
+        <div class="book-header-middle-section">
+          <input type="text" placeholder="Search" class="search-bar">
+      
+          <button class="search-button">
+            <img class="search-icon" src="images/search-icon.png">
+          </button>
+        </div>
+      
+        <div class="book-header-right-section">
+          <a class="cart-link header-link" href="checkoutb.html">
+            <img class="cart-icon" src="images/cart-icon.png">
+            <div class="cart-quantity js-cart-quantity"></div>
+            <div class="cart-text">Cart</div>
+          </a>
+        </div>
+      </div>
+      <br><br><br>
+    
+      <div class="books js-books-grid">
+      </div>
+    <div class="fixed-footer">
+        <div class="contain"> Copyright ©2024 My Website. All right are reserved and data are privated.</div>
+    </div>
+    <script type="module" src="scripts/script.js"></script>
+</body>
+</html>

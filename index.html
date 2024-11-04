@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShop</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/navstyle.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+  <div class="book-header">
+    <div class="book-header-left-section">
+      <a href="index.html" class="header-link">
+        <img class="book-logo"
+          src="images/book-logo.png">
+      </a>
+    </div>
+  
+    <div class="book-header-middle-section">
+      <input type="text" placeholder="Search" class="search-bar">
+  
+      <button class="search-button">
+        <img class="search-icon" src="images/search-icon.png">
+      </button>
+    </div>
+  
+    <div class="book-header-right-section">
+      <a class="cart-link header-link" href="checkoutb.html">
+        <img class="cart-icon" src="images/cart-icon.png">
+        <div class="cart-quantity js-cart-quantity"></div>
+        <div class="cart-text">Cart</div>
+      </a>
+    </div>
+  </div>
+    
+
+        <!-- Slider main container -->
+    <div class="swiper w-full h-[450px] bg-slate-200 my-20  ">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="images/aggtm.jpeg" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        <div class="swiper-slide">
+            <img src="/images/all.jpg" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        <div class="swiper-slide">
+            <img src="/images/bttm.jpg" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        <div class="swiper-slide">
+            <img src="/images/ps.jpg" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/tcp.jpg" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/fs.jpg" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/tsp.webp" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/twisted.jpg" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/sm.jpg" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/yvrs.jpeg" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/trorp.jpg" alt="" class="w-full h-[450px] object-contain">
+        </div>
+        
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>    
+
+      <div class="features">
+        <div class="aboutus" onclick="window.location.href='aboutus.html';">
+          <i class="ri-account-circle-line ri-7x"></i>
+          <div class="middle">
+            <div class="text">About us</div>
+          </div>
+        </div>
+  
+        <div class="browsebooks" onclick="window.location.href='books.html';">
+          <i class="ri-book-shelf-fill ri-7x" ></i>
+          <div class="middle">
+            <div class="text">Browse Books</div>
+          </div>
+        </div>
+  
+        <div class="contact" onclick="window.location.href='contact.html';">
+          <i class="ri-contacts-fill ri-7x" ></i>
+          <div class="middle">
+            <div class="text">Conatct us</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="fixed-footer">
+        <div class="contain"> Copyright ©2024 My Website. All right are reserved and data are privated.</div>
+    </div>
+   
+
+
+
+    <script >
+        
+            const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    autoplay:{
+        delay: 2000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    });
+    </script>
+
+    <script type="module"  src="/scripts/script.js"></script>
+
+</body>
+</html>
+

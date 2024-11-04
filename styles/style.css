@@ -1,0 +1,268 @@
+body{
+  margin: 0;
+  background-color: rgb(226, 232, 240);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10vh;
+}
+
+.enquiry h3,.details{
+  color: gray;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.enquiry form{
+  background-color: hsla(0, 0%, 50%, 0.257);
+  width: 70vh;
+  text-align: center;
+  height: 50vh;
+  padding: 1vh;
+}
+
+.enquiry input,select{
+  height: 1.95rem;
+  width: 98%;
+  margin: .5vh 0;
+  color: gray;
+}
+
+
+
+.enquiry button{
+  height: 1.8rem;
+  background-color: rgb(23, 94, 156);
+  border: none;
+  color: white;
+  border-radius: 10%;
+}
+
+.contacthead{
+  text-align: center;
+  color: hsla(0, 6%, 37%, 0.518);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.contain{
+  margin: 0 auto;
+  width: 80%;
+  color:blue;
+  font-size: x-large;
+}
+
+.fixed-footer{
+width: 100%;
+position: fixed;
+left: -0.5px;
+bottom: 0px;
+background-color: rgb(170, 130, 130);
+padding: 8px;
+text-align: center;
+transform: translateY(10px);
+}
+
+
+
+.books{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 29px 20px;
+  padding: 20px 20px;
+}
+
+.each-book{
+  padding: 20px;
+  background-color: rgb(242, 245, 247);
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px rgb(207, 201, 201);
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.each-book:hover{
+  background-color: rgb(246, 242, 242);
+}
+
+.each-book figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.each-book figure:hover img {
+	-webkit-transform: scale(1.09);
+	transform: scale(1.09);
+}
+
+.each-book img{
+  width: 90%;
+  border-radius: 5px;
+  height: 250px;
+}
+
+.features{
+  margin: 5vh;
+  gap: 5vh;
+  margin-bottom: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutus , .browsebooks , .contact{
+  height: 200px;
+  width: 200px;
+  border: 2px solid rgb(120, 105, 105);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(170, 130, 130);
+}
+
+.contact , .aboutus , .browsebooks{
+  position: relative;
+}
+
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: 50%;
+  transition: .5s ease;
+  background-color: #a48a8a;
+}
+
+.middle:active{
+  background-color: #523e3e;
+}
+
+.aboutus:hover .middle,.browsebooks:hover .middle,.contact:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: rgb(13, 3, 3);
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mydetails{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10rem;
+  margin-left: 2rem;
+  margin-bottom: 10%;
+}
+
+.welcome{
+  text-align: center;
+  color: #947070;
+}
+
+.mydetails h3{
+  color: #947070;
+}
+
+
+.mydetails img{
+  height: 60vh;
+  width: 60vh;
+  border-radius: 40% 10% / 20% 30%;
+  border: none;
+  object-fit:cover;
+}
+
+.more{
+  display: none;
+}
+
+#btn-more{
+  height: 5vh;
+  width: 20vh;
+  border: none;
+  background-color: #947070;
+  border-radius: 5px;
+  color: white;
+  font-size: medium;
+}
+
+#btn-more:hover{
+  background-color: #a18a8a;
+}
+
+.cart-btn{
+  padding: 10px;
+  width: 50%;
+  border: 1px solid #a48c8c;
+  border-radius: 50px;
+  margin-bottom: 3%;
+  background-color: #a48c8c;
+  color: white;
+  font-size: medium;
+  transition: background-color 0.1s ease-in;
+  position: relative;
+  left: 20%;
+}
+
+.cart-btn:hover{
+  background-color: #dfd3d3;
+  color: black;
+}
+
+.cart-btn:active{
+  background-color: #3c3535;
+  color: #fff;
+}
+
+.sel-quantity{
+  width: 40px;
+  background-color: rgb(242, 245, 247);
+  border-radius: 30%;
+  color: black;
+  font-size: medium;
+}
+
+.added-to-cart img{
+  height: 20px;
+  width: 20px;
+}
+
+.added-to-cart{
+  font-size: medium;
+  text-align: left;
+  opacity: 0;
+}
+
+.added-to-cart-visible{
+  opacity: 1;
+}
+
+
+.submitted{
+  color: #523e3e;
+  font-size: larger;
+  display: none;
+}
+
+.display-added{
+  color: #523e3e;
+  font-size: larger;  
+  display: block;
+}

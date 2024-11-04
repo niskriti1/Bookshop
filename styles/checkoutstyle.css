@@ -1,0 +1,312 @@
+.checkout-header {
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1100px;
+
+  display: flex;
+  align-items: center;
+}
+
+.checkout-header-left-section {
+  width: 150px;
+}
+
+.book-logo {
+  width: 60px;
+  margin-top: 12px;
+  height: 60px;
+}
+
+
+
+
+.checkout-header-middle-section {
+  flex: 1;
+  flex-shrink: 0;
+  text-align: center;
+
+  font-size: 25px;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+}
+
+.return-to-home-link {
+  color: rgb(0, 113, 133);
+  font-size: 23px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font:bolder ;
+}
+
+
+.checkout-header-right-section {
+  text-align: right;
+  width: 150px;
+}
+
+
+.main {
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-top: 140px;
+  margin-bottom: 100px;
+
+  /* margin-left: auto;
+     margin-right auto;
+     Is a trick for centering an element horizontally
+     without needing a container. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.checkout-grid {
+  display: grid;
+  /* Here, 1fr means the first column will take
+     up the remaining space in the grid. */
+  grid-template-columns: 1fr 450px;
+  column-gap: 12px;
+
+  /* Use align-items: start; to prevent the elements
+     in the grid from stretching vertically. */
+  align-items: start;
+}
+
+
+
+.cart-item-container,
+.payment-summary {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 4px;
+  padding: 18px;
+}
+
+.cart-item-container {
+  margin-bottom: 19px;
+}
+
+.payment-summary {
+  padding-bottom: 5px;
+}
+
+.delivery-date {
+  color: rgb(0, 118, 0);
+  font-weight: 700;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 22px;
+}
+
+
+.cart-item-details-grid {
+  display: grid;
+  /* 100px 1fr 1fr; means the 2nd and 3rd column will
+     take up half the remaining space in the grid
+     (they will divide up the remaining space evenly). */
+  grid-template-columns: 100px 1fr ;
+  column-gap: 25px;
+}
+
+
+
+.product-image {
+  max-width: 100%;
+  max-height: 120px;
+
+  /* margin-left: auto;
+     margin-right auto;
+     Is a trick for centering an element horizontally
+     without needing a container. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-name {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  color: rgb(177, 39, 4);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.product-quantity .link-primary {
+  margin-left: 3px;
+}
+
+
+
+.delivery-options-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.delivery-option {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.delivery-option-input {
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.delivery-option-date {
+  color: rgb(0, 118, 0);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.delivery-option-price {
+  color: rgb(120, 120, 120);
+  font-size: 15px;
+}
+
+.payment-summary-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.payment-summary-row {
+  display: grid;
+  /* 1fr auto; means the width of the 2nd column will be
+     determined by the elements inside the column (auto).
+     The 1st column will take up the remaining space. */
+  grid-template-columns: 1fr auto;
+
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+.payment-summary-money {
+  text-align: right;
+}
+
+.subtotal-row .payment-summary-money {
+  border-top: 1px solid rgb(222, 222, 222);
+}
+
+.subtotal-row div {
+  padding-top: 9px;
+}
+
+.total-row {
+  color: rgb(177, 39, 4);
+  font-weight: 700;
+  font-size: 18px;
+
+  border-top: 1px solid rgb(222, 222, 222);
+  padding-top: 18px;
+}
+
+.place-order-button {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  background-color: rgb(185, 103, 137);
+  color: white;
+  border: none;
+  margin-top: 11px;
+  margin-bottom: 15px;
+}
+
+.display-order{
+  color:rgb(192, 108, 87);
+  text-align: center;
+  font-size: larger;
+  display: none;
+}
+
+.display-added{
+  display: block;
+}
+
+.quantity-input {
+  width: 40px;
+  display: none;
+}
+
+.update-quantity-link{
+  color: green;
+  cursor: pointer;
+}
+
+.delete-quantity-link{
+  color: red;
+  cursor: pointer;
+}
+
+.save-quantity-link {
+  display: none;
+  color: rgb(113, 80, 40);
+  cursor: pointer;
+}
+
+.is-editing-quantity {
+  .quantity-input,
+  .save-quantity-link {
+    display: initial;
+  }
+}
+
+.is-editing-quantity {
+  .update-label,
+  .update-quantity-link {
+    display: none;
+  }
+}
+
+.disable{
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.empty-msg{
+  font-size: x-large;
+  color: #4f3a3a;
+}
+
+.empty-btn{
+  background-color: rgb(225, 100, 171);
+  color: white;
+  font-size: large;
+  padding: 10px;
+  border: none;
+  border-radius: 10%;
+}
+
+.empty-btn:active{
+  background-color: rgb(218, 178, 200);
+  color: black;
+}
